@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apex Task 2 Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyWebsite</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#todo">To-Do List</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="grid-container">
+    <section class="grid-item">
+      <h2>Welcome to My Website</h2>
+      <p>This is a simple responsive layout created with Flexbox and Grid.</p>
+    </section>
+    <section class="grid-item">
+      <h2>Our Services</h2>
+      <p>We offer web development and design services. Contact us below!</p>
+    </section>
+    <section class="grid-item">
+      <h2>Stay Connected</h2>
+      <p>Follow us on social media for updates.</p>
+    </section>
+  </main>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact-form">
+    <h2>Contact Us</h2>
+    <form id="form">
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <textarea id="message" placeholder="Your message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Dynamic To-Do List -->
+  <section id="todo" class="todo-section">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Add a new task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MyWebsite. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
